@@ -66,3 +66,30 @@ Upoštevana so naslednja stanja:
 	•	prazen rezultat (empty state)
 	•	izpis napake pri neuspešnem API klicu
 	•	označevanje izdelkov brez zaloge (stock == 0)
+
+
+## Zagon projekta (Laravel)
+
+1. Namesti PHP odvisnosti:
+
+composer install
+
+2. Namesti Node odvisnosti:
+
+npm install
+
+3. Kopiraj `.env` datoteko:
+
+cp .env.example .env
+
+4. Generiraj APP_KEY:
+
+php artisan key:generate
+
+5. Zaženi Vite (Tailwind build):
+
+npm run dev
+
+6. V drugem terminalu zaženi Laravel strežnik:
+
+php artisan serve
